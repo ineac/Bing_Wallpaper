@@ -8,6 +8,15 @@ url：http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1
 
 将 前部分url 和 后部分url 拼接起来，组成完整的url
 
-使用 urllib 将图片下载下来（下载下来的图片文件名为当前日期.jpg）
+使用 urllib 将壁纸下载下来（下载下来的图片文件名为当前日期.jpg）
 
+## 将 .py 文件转为 .exe
+1. 安装 PyInstaller 模块
+   pip install PyInstaller
+2. 将 .py 文件打包成 .exe 文件
+   找到需要打包的 .py 文件路径，在地址栏输入 cmd，打开命令窗口后输入 `pyinstaller -F 文件名.py`
+   执行完毕后会生成三个文件夹，生成的 .exe 文件就在 dist 文件夹中
+
+   
+   
 

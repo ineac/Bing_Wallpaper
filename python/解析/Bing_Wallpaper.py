@@ -8,6 +8,7 @@ import os
 
     
 def get_content():
+    #下载 json 文件的保存目录（可以修改）
     urllib.request.urlretrieve(url,'D:/IDM download/images/'+ name +'.json')
 
 def down_load():
@@ -15,17 +16,18 @@ def down_load():
     jsonname = 'D:/IDM download/images/'+ name +'.json'
 
     obj = json.load(open(jsonname,'r',encoding='utf-8'))
-    # print(obj)
+
     src = jsonpath.jsonpath(obj,'$.images[*].url')
     
 
     url = 'https://cn.bing.com/'+ src[0]
     print(url)
-
+    # 下载图片的保存目录（可以修改）
     filename = 'D:/IDM download/images/'+ name + '.jpg'
     print(filename)
     urllib.request.urlretrieve(url=url,filename=str(filename))
 
+    # 删除 json 文件
     if os.path.exists(jsonname):
         os.remove(jsonname)
     else:

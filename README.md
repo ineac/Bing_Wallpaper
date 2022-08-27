@@ -18,6 +18,7 @@ url：http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1
    - 打开命令窗口后输入 `pyinstaller -F 文件名.py`
    - 执行完毕后会生成三个文件夹，生成的 .exe 文件就在 dist 文件夹中
 
+> 注意：如果有挂梯子，获取的壁纸是国际版必应壁纸！
    
    
 

@@ -14,8 +14,9 @@ url：http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1
 1. 安装 PyInstaller 模块
    pip install PyInstaller
 2. 将 .py 文件打包成 .exe 文件
-   找到需要打包的 .py 文件路径，在地址栏输入 cmd，打开命令窗口后输入 `pyinstaller -F 文件名.py`
-   执行完毕后会生成三个文件夹，生成的 .exe 文件就在 dist 文件夹中
+- 找到需要打包的 .py 文件路径在地址栏输入 cmd
+- 打开命令窗口后输入 `pyinstaller -F 文件名.py`
+- 执行完毕后会生成三个文件夹，生成的 .exe 文件就在 dist 文件夹中
 
    
    
